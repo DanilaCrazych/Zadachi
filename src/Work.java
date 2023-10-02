@@ -5,4 +5,9 @@ public class Work {
         System.out.println("Здравствуйте "+name+"!");
 
     }
+
+    public void rabotaIsp(String name){
+        System.out.println("Здравствуйте "+name+"!");
+
+    }
 }
