@@ -7,11 +7,9 @@ public class BaseOfData {
     ArrayList<BaseOfData> ispolnitel = new ArrayList<BaseOfData>();
     String name;
     boolean access = false;
-
     public BaseOfData(String name) {
         this.name = name;
     }
-
     public void addmennagers() {
         try {
             System.out.println("Введите имя: ");
@@ -22,10 +20,9 @@ public class BaseOfData {
             System.out.println("Error");
         }
     }
-
     public void auth(String login) {
         try {
-            for (int i = 0; i<mennagers.size(); i++) {
+            for (int i = 0; i < mennagers.size(); i++) {
                 if (mennagers.get(i).name.equals(login)) {
                     access = true;
                 } else {
@@ -36,7 +33,6 @@ public class BaseOfData {
             System.out.println("Error!");
         }
     }
-
     public void addispol() {
         try {
             System.out.println("Введите имя: ");
@@ -47,10 +43,9 @@ public class BaseOfData {
             System.out.println("Error");
         }
     }
-
     public void authIsp(String login) {
         try {
-            for (int i = 0; i<ispolnitel.size(); i++) {
+            for (int i = 0; i < ispolnitel.size(); i++) {
                 if (ispolnitel.get(i).name.equals(login)) {
                     access = true;
                 } else {
