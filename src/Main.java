@@ -30,7 +30,7 @@ public class Main {
                         String login = scan.next();
                         bd.authIsp(login);
                         if (bd.access == true) {
-                            work.rabotaMen(login);
+                            work.rabotaIsp(login);
                         }
                     }
                     break;
